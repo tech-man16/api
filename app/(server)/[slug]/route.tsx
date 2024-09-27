@@ -2,6 +2,9 @@
 import { connect } from "../db/connection";
 import { NextRequest, NextResponse } from "next/server";
 
+export function generateStaticParams() {
+  return [{ slug: '1' },{slug:"2"}];
+}
 
 export async function GET(
     request: NextRequest,
