@@ -24,4 +24,6 @@ export async function GET(
         return NextResponse.json({ message: "Internal Server Error", status: 500 }, { status: 500 })
     }
 }
-export const generateStaticParams();
+export const function generateStaticParams(){
+    
+};
