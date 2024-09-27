@@ -2,7 +2,7 @@
 import { connect } from "../db/connection";
 import { NextRequest, NextResponse } from "next/server";
 
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 export const dynamicParams = false
 export const revalidate = false
 export const fetchCache = 'auto'
