@@ -2,12 +2,6 @@
 import { connect } from "../db/connection";
 import { NextRequest, NextResponse } from "next/server";
 
-export const dynamic = 'force-static'
-export const dynamicParams = false
-export const revalidate = false
-export const fetchCache = 'auto'
-export const runtime = 'nodejs'
-export const preferredRegion = 'auto'
 
 export async function GET(
     request: NextRequest,
@@ -32,3 +26,9 @@ export async function GET(
     }
 }
 
+export const dynamic = 'force-static'
+export const dynamicParams = true
+export const revalidate = false
+export const fetchCache = 'auto'
+export const runtime = 'nodejs'
+export const preferredRegion = 'auto'
