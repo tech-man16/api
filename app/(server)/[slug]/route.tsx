@@ -25,5 +25,5 @@ export async function GET(
     }
 }
 export const function generateStaticParams(){
-    
+    return [{slug:"ab"}];
 };
