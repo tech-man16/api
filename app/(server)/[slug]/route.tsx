@@ -2,6 +2,13 @@
 import { connect } from "../db/connection";
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = 'auto'
+export const dynamicParams = true
+export const revalidate = false
+export const fetchCache = 'auto'
+export const runtime = 'nodejs'
+export const preferredRegion = 'auto'
+
 export async function GET(
     request: NextRequest,
     { params }: { params: { slug: string } }
@@ -24,6 +31,4 @@ export async function GET(
         return NextResponse.json({ message: "Internal Server Error", status: 500 }, { status: 500 })
     }
 }
-export const function generateStaticParams(){
-    return [{slug:"ab"}];
-};
+
